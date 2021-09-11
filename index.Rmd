@@ -5,7 +5,7 @@ author: "cjlortie"
 
 # Quantitative synthesis tools  
 
-![](./hello.jpg){width=4in}  
+![](./synthesis.png){width=3in}  
 
 An overview of quantitative synthesis tools associated with review processing.
 
