@@ -1,0 +1,5 @@
+lesson,topic,goal,key resource
+1,Quantitative synthesis tools,Explore conceptual and mental models for synthesis.,[The power of data synthesis to shape the future of the restoration community and capacity](https://onlinelibrary.wiley.com/doi/full/10.1111/rec.13251)
+2,Evidence workflow reporting,Develop reporting documentation from a formal synthesis review process.,[Systematic review and meta-analysis: a primer](https://www.researchgate.net/publication/232612227_Systematic_review_and_meta-analysis_A_primer)
+3,Meta-analysis in R,"Develop a template for derived data for analyses, and complete a meta-analysis in R.  ",[The metafor Package: A Meta-Analysis Package for R](https://www.metafor-project.org/doku.php)
+4,Interpretation of meta-analyses,Examine model outputs from meta-analyses and interpret. Identify key components. ,[Meta-evaluation of meta-analysis: ten appraisal questions for biologists](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
