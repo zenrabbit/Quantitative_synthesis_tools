@@ -1,0 +1,51 @@
+--- 
+title: ''
+author: "cjlortie"
+---
+
+# Quantitative synthesis workflow reporting {#synthesis}
+
+![](./report.png){width=3in}    
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+
+### Learning outcomes {-}  
+1. Develop a checklist for reading systematic reviews and meta-analyses.  
+2. Document a quantitative synthesis process.  
+3. Consolidate understanding of key synthesis elements from literature.  
+
+
+### Context {-}  
+ 
+
+
+### Challenge {-}  
+1. Review the literature from  your field of research from the perspective of synthesis. Explore whether a simple three-paper typology is relevant or if the field has begun to incorporate and frame knowledge via other inference tools including these or even others.  Methods, concepts, semantics, ontologies, etc. any forms of evidence aggregation that advances insight, innovation, and knowledge production.  
+2. Familiarize yourself with the scientific synthesis options that can describe and capture the state-of-the-art research for your specific challenge.  
+3. Select and refine your topic by populating a table with key terms.    
+4. Check Google Scholar and The Web of Science trying these different terms.  
+5. Document the relevant frequency of synthesis studies using these terms. Filter to most cited or the last three years of research only if the evidence is too extensive or if you suspect there is a key temporal bias or change within the field of inquiry.  
+6. Repeat process for primary studies. Contrast the primary study focus with a synthesis focus.  
+7. Do a cursory read of the abstracts of the synthesis studies.  
+8. Identify other terms including synonyms and antonyms that you may have not included.  
+9. Reflect on this challenge and ensure the terms you used and the papers you have are studying the dimension of the challenge you want to summarize.  
+10. Decide if it makes sense to do a short narrative, systematic review, or meta-analysis (at least at this point in time).  
+
+### Products {-}  
+1. A clear vision of the challenge you want to tackle.  
+2. A set of ideas, papers, and the outcome that you ultimately are likely to provide.  
+3. The landscape of evidence you need to examine a process or challenge across many studies.   
+
+### Resources {-}  
+[Slide deck](https://figshare.com/articles/presentation/Synthesis_tools/16608544)    
+
+[Template  to contrast relative frequencies of synthesis versus primary studies](https://figshare.com/articles/dataset/A_tally_template_to_contrast_primary_and_synthesis_studies_for_a_specific_field_of_research/16608526)  
+
+### Reflection questions {-}  
+1. What synthesis studies have most informed or inspired your understanding in your field?  
+2. Is there evidence that is most needed by stakeholders right now that needs to be compiled or derived?  
+3. Was there any indication that the focus of the synthesis studies you retrieved differed from the primary studies?  
+4. Do synthesis studies advance theory or depth of knowledge more rapidly than well-executed primary studies or experiments?  
