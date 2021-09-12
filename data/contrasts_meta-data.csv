@@ -1,0 +1,9 @@
+item,description
+rep,the search iteration to a particular resource
+bibliometric_resource,state the engine or resource queried such as The Web of Science
+scope,list refinements applied to queries such as restrictions to years or publication types
+terms,list terms and boolean operators used in full here
+reviews,"tally the narrative reviews, idea papers, all synthesis contributions that did not formally report quantitative estimates from the literature or provide a replicable workflow to repeat queries of literature"
+systematic_reviews,tally the reviews that were listed as systematic and provided a mechanism to reproduce the search process
+meta-analyses,tally the meta-analyses that calculated and reported effect size estimates
+primary_studies,"tally the total number of primary studies, even coarsely, to estimate extent of study"
