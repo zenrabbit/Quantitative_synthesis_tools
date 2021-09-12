@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 
 
 ### Context {-}  
-To best explore conceptual and mental models for synthesis, a summary of the simple landscape of opportunities and more comprehensive mapping of synthesis and critical big-picture thinking in science is illuminating. Scientific synthesis is big picture science that describe a set of studies on a pinpointed topic ([Lortie 2014](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1600-0706.2013.00970.x). There are at least three simple and direct options that are amenable to a capture of the research associated with a scientific challenge that you have identified.  
+To best explore conceptual and mental models for synthesis, a summary of the simple landscape of opportunities and more comprehensive mapping of synthesis and critical big-picture thinking in science is illuminating. Scientific synthesis is big picture science that describe a set of studies on a pinpointed topic ([Lortie 2014](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1600-0706.2013.00970.x)). There are at least three simple and direct options that are amenable to a capture of the research associated with a scientific challenge that you have identified.  
 
 (1) Narrative review as a highlight, short commentary, or new idea paper that is a snapshot of the key findings from a field research summarizing the main discoveries and/or listing the most critical research gaps. Papers like these are often called **Insights**, **Forum**, or **Ignite**.   
 
@@ -53,5 +53,10 @@ A more complex and comprehensive summary of the contemporary landscape of synthe
 ### Lesson outcomes {-}  
 1. A clear vision of the challenge you want to tackle.  
 2. A set of ideas, papers, and the outcome you ultimately are likely to provide.  
-3. The evidence you need to examine a process or challenge across many studies.    
+3. The evidence you need to examine a process or challenge across many studies.   
+
+### Resources {-}  
+Slide deck  
+Template to contrast relative frequencies  
+
 
