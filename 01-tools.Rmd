@@ -1,3 +1,8 @@
+--- 
+title: ''
+author: "cjlortie"
+---
+
 # Quantitative synthesis tools {#synthesis}
 
 ![](./tools.png){width=3in}    
@@ -56,8 +61,9 @@ A more complex and comprehensive summary of the contemporary landscape of synthe
 3. The landscape of evidence you need to examine a process or challenge across many studies.   
 
 ### Resources {-}  
-Slide deck  
-[Template](https://figshare.com/articles/dataset/A_tally_template_to_contrast_primary_and_synthesis_studies_for_a_specific_field_of_research/16608526) to contrast relative frequencies of synthesis versus primary studies  
+[Slide deck](https://figshare.com/articles/presentation/Synthesis_tools/16608544)    
+
+[Template  to contrast relative frequencies of synthesis versus primary studies](https://figshare.com/articles/dataset/A_tally_template_to_contrast_primary_and_synthesis_studies_for_a_specific_field_of_research/16608526)  
 
 ### Reflection questions {-}  
 1. What synthesis studies have most informed or inspired your understanding in your field?  
