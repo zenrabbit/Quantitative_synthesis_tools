@@ -3,9 +3,9 @@ title: ''
 author: "cjlortie"
 ---
 
-# Quantitative synthesis workflow reporting {#synthesis}
+# Meta-analysis in R {#meta}
 
-![](./report.png){width=3in}    
+![](./meta.png){width=3in}    
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
@@ -13,67 +13,48 @@ knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 
 
 ### Learning outcomes {-}  
-1. Develop a checklist for reading systematic reviews and meta-analyses.  
-2. Document a quantitative synthesis process.  
-3. Consolidate understanding of key synthesis elements from the literature.  
+1. Format data for meta-analyses in R.  
+2. Explore the capacity of the R package metafor.  
+3. Pilot statistics for two datasets.    
 
 
 ### Context {-}  
-Evidence implementation and reuse is a non-trivial process in most disciplines. It is crucial that experts are able to use, reuse, and implement synthesis findings. This process of critical appraisal furthers a novel, big-picture view of scientific findings associated with single studies. This can take the form of a perspective that routinely weights relative evidence by purpose, reason, and other findings to improve decision making by stakeholders, the public, and other scientists. Application of this process to published peer-review evidence can be limited by transparency, level of reporting, missing data, meta-data articulation, and limited moderator reporting. Hence, ten simple rules for evidence reuse were proposed were broadly to highlight these and other challenges in synthesis science ([Lortie and Owen 2020](https://www.facetsjournal.com/doi/10.1139/facets-2020-0021)). Critical reading of meta-analyses is also a powerful skill for all experts ([Lortie et al. 2013](https://onlinelibrary.wiley.com/doi/10.1002/jrsm.1109)). This thinking and evaluation process has also been developed into a more prescriptive set of ten questions to apply to any published meta-analysis or systematic review ([Nakagawa et al. 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)). These questions strengthen the reuse of current  meta-analyses and provide a checklist for reporting in future systematic reviews and meta-analyses.  
+Try out these ideas in a meta-analysis. Securing derived data to replicate an existing synthesis was not common historically, but it is now becoming increasingly viable with open science influences on these contributions. How to do a meta-analysis is well described in the peer-reviewed literature ([Field and Gillett 2010](https://bpspsychub.onlinelibrary.wiley.com/doi/epdf/10.1348/000711010X502733)) and numerous books ([Koricheva et al 2013](https://press.princeton.edu/books/hardcover/9780691137285/handbook-of-meta-analysis-in-ecology-and-evolution)) to name a few. Doing meta-analyses using the R programming language is similarly well articulated - particularly from the documentation associated with the package [metafor](https://www.metafor-project.org/doku.php). There are no bad choices in R with well over 100 packages associated with and supporting meta-analyses ([conservatively listed at 151 packages](https://cran.r-project.org/web/views/MetaAnalysis.html). The output of Stata (an application specific to many medical meta-analyses), the R package meta, and metafor were virtually identical in several test cases ([Lortie and Filazzola 2020](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.6747)). Ten criteria are proposed in contrasting R packages for this task specifically, but at the current time, metafor is the most commonly used and extensively documented. Hence, consider tackling the challenges here with this package as a robust starting point and entry in meta-statistics.      
 
-
-
-#### Checklist reporting {-}  
-List from ([Nakagawa et al. 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)):  
-
-1. Is the search systematic and transparently documented?
-2. What question and what effect size?  
-3. Is non-independence taken into account?  
-4. Which meta-analytic model?  
-5. Is the level of consistency among studies reported?  
-6. Are the causes of variation among studies investigated?  
-7. Are effects interpreted in terms of biological importance?  
-8. Has publication bias been considered?  
-9. Are results really robust and unbiased?  
-10. Is the current state (and lack) of knowledge summarized?  
-
-
-
-
-#### Purpose {-}  
-Good reporting is supported by good thinking.  Purpose prevails. A primer for  systematic reviews and meta-analysis in the sports science clearly articulates a clear and direct purpose delineation process for syntheses ([Impellizzeri and Bizzini 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3474302/)).  
-
-#### Goals checklist {-}  
-List from ([Impellizzeri and Bizzini 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3474302/)):  
-
-1. Identifying treatments that are not effective.  
-2. Summarizing the likely magnitude of benefits of effective treatments.  
-3. Identifying unanticipated risks of apparently effective treatments.  
-4. Identifying gaps of knowledge.  
-5. Auditing the quality of existing trials.  
-
-Collectively, these how-to papers suggest that it would be ideal if synthesis reporting exceeded the norms and standards associated with primary research reporting to enable next-level synthesis and reproducibility. Nonetheless, it is easy to get lost in the technical details. Consequently, purpose, audience, and reuse should be kept at the forefront of reviewing, reporting, and doing scientific syntheses. These ideas can be mobilized for knowledge mining even in the early steps of evidence retrieval and reviewing for inclusion in a synthesis project.     
+### The 5 primary steps for meta-analyses in R. {-}
+1. Secure primary data.  
+2. Build conceputal model for factors, reponses, and moderators.
+3. Calculate effect size(s).  
+4. Fit appropriate meta-model.  
+5. Explore significance levels, heterogeneity, and bias.
 
 
 ### Challenge {-}  
-1. Apply the checklist to a systematic review and meta-analysis in your discipline published a number of years ago and again to a more recent synthesis study.  
-2. Check whether the derived data were also published for each synthesis paper.  
-3. Check main text of each and supplements and note whether a Preferred Reporting Items for Systematic Reviews and Meta-Analyses [(PRISMA)](http://www.prisma-statement.org) checklist or flow diagram with provided.  
-4. Do a primary publication research query using Google Scholar and/or The Web Of Science for your specific process. Document the relative frequency of reporting by search terms (complete template provided below).  
-5. Review a small subset of the papers (screen only) and test out the [PRISMAstatement R package](https://cran.r-project.org/web/packages/PRISMAstatement/index.html) for this scoping review.  
+1. Start simple and go with a classic. These [wind turbine data](https://figshare.com/articles/dataset/Meta_thinking_data_wind_turbine_effects_2005/7766990) and its meta-analysis changed the world.  Download these data and appled the 5 steps from above with help from the metafor documentation.  
+2. In the spirit of reuse and conceputal replication, this process was reported in 2017 with a more [comprehensive dataset](https://figshare.com/articles/dataset/Meta_thinking_data_wind_turbine_effects_2017/7767002).  
+
+Try out one of these datasets.  
+
+
+[Preventing exercise-induced bronchoconstriction meta-analysis](https://figshare.com/articles/dataset/Meta_thinking_data_preventing_exercise-induced_bronchoconstriction/7767020)  
+
+[A meta-analysis of restoration outcomes and species richness](https://knb.ecoinformatics.org/view/doi%3A10.5063%2F057DCQ)  
+
+[A synthesis of common garden studies testing for local adaptation to climate](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF1862DVX)  
+
+[A synthesis shrub facilitation studies testing for increases in community diversity estimates](https://knb.ecoinformatics.org/view/doi:10.5063/F147488H)  
 
 ### Products {-}  
-1. A checklist for review and reporting of these specific syntheses.  
-2. A pilot literature dataset of the literature for a search(es) for a synthesis. 3. A PRISMA statement flow chart for use in retrospective pilot reporting.  
+1. Two R scripts for meta-analysis.  
+2. A sense of data structures needed for meta-analyses in the R package metafor.  
 
 ### Resources {-}  
-[Slide deck](https://figshare.com/articles/presentation/Quantitative_synthesis_reporting/16608700)      
-
-[A synthesis review literature template](https://figshare.com/articles/dataset/A_synthesis_review_literature_template/16608715)  
-
-[PRISMA statement arguments for R package](https://figshare.com/articles/dataset/PRISMA_statement_arguments_for_R_package/16608721)  
+[metafor documentation](https://www.metafor-project.org/doku.php)  
+[Bookdown free books](https://bookdown.org/home/tags/meta-analysis/)  
 
 ### Reflection questions {-}  
-1. Was there evidence for a change in better synthesis reporting practices in your discipline?  
-2. Were the derived data reported in syntheses or would it be possible to update/repeat a published synthesis in your discipline?    
-3. Does the flow chart to reviewing and reusing research align with your cognitive modality and critical thinking approach to evidence?  
+1. Did the analytical process differ significantly from primary-data workflows?  
+2. Do meta-models in R sufficiently report outcomes to assess strength of evidence?  
+3. What other steps would be an appropriate addendum to this process?  
+4. What relational or qualitative elements might be worthwhile to consider adding to meta-analyses and their interpretation for stronger evidence framing and reuse?  
+

@@ -3,7 +3,7 @@ title: ''
 author: "cjlortie"
 ---
 
-# Quantitative synthesis tools {#synthesis}
+# Quantitative synthesis tools {#tools}
 
 ![](./tools.png){width=3in}    
 

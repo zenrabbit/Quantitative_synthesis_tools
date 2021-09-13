@@ -3,7 +3,7 @@ title: ''
 author: "cjlortie"
 ---
 
-# Quantitative synthesis workflow reporting {#synthesis}
+# Quantitative synthesis workflow reporting {#reporting}
 
 ![](./happy.png){width=3in}    
 
