@@ -7,9 +7,6 @@ author: "cjlortie"
 
 ![](./report.png){width=3in}    
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
-```
 
 
 ### Learning outcomes {-}  

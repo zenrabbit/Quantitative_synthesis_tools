@@ -3,13 +3,9 @@ title: ''
 author: "cjlortie"
 ---
 
-# Quantitative synthesis workflow reporting {#reporting}
+# Quantitative synthesis workflow reporting {#interpretation}
 
 ![](./happy.png){width=3in}    
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
-```
 
 
 ### Learning outcomes {-}  

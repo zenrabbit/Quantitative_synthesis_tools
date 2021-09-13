@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Quantitative synthesis workflow reporting | quantitative_synthesis_tools.knit</title>
+  <meta name="description" content="This a brief introduction to scientific synthesis tools that use meta-analyses and systematic reviews to advance science and inform decision making." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Quantitative synthesis workflow reporting | quantitative_synthesis_tools.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This a brief introduction to scientific synthesis tools that use meta-analyses and systematic reviews to advance science and inform decision making." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Quantitative synthesis workflow reporting | quantitative_synthesis_tools.knit" />
+  
+  <meta name="twitter:description" content="This a brief introduction to scientific synthesis tools that use meta-analyses and systematic reviews to advance science and inform decision making." />
+  
+
+<meta name="author" content="cjlortie" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="tools.html"/>
+<link rel="next" href="meta.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">quantitative_synthesis</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#learning-outcomes"><i class="fa fa-check"></i>Learning outcomes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#rationale"><i class="fa fa-check"></i>Rationale</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#structure"><i class="fa fa-check"></i>Structure</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>2</b> Quantitative synthesis tools</a>
+<ul>
+<li class="chapter" data-level="" data-path="tools.html"><a href="tools.html#learning-outcomes-1"><i class="fa fa-check"></i>Learning outcomes</a></li>
+<li class="chapter" data-level="" data-path="tools.html"><a href="tools.html#context"><i class="fa fa-check"></i>Context</a></li>
+<li class="chapter" data-level="" data-path="tools.html"><a href="tools.html#challenge"><i class="fa fa-check"></i>Challenge</a></li>
+<li class="chapter" data-level="" data-path="tools.html"><a href="tools.html#products"><i class="fa fa-check"></i>Products</a></li>
+<li class="chapter" data-level="" data-path="tools.html"><a href="tools.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="tools.html"><a href="tools.html#reflection-questions"><i class="fa fa-check"></i>Reflection questions</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="reporting.html"><a href="reporting.html"><i class="fa fa-check"></i><b>3</b> Quantitative synthesis workflow reporting</a>
+<ul>
+<li class="chapter" data-level="" data-path="reporting.html"><a href="reporting.html#learning-outcomes-2"><i class="fa fa-check"></i>Learning outcomes</a></li>
+<li class="chapter" data-level="" data-path="reporting.html"><a href="reporting.html#context-1"><i class="fa fa-check"></i>Context</a></li>
+<li class="chapter" data-level="" data-path="reporting.html"><a href="reporting.html#challenge-1"><i class="fa fa-check"></i>Challenge</a></li>
+<li class="chapter" data-level="" data-path="reporting.html"><a href="reporting.html#products-1"><i class="fa fa-check"></i>Products</a></li>
+<li class="chapter" data-level="" data-path="reporting.html"><a href="reporting.html#resources-1"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="reporting.html"><a href="reporting.html#reflection-questions-1"><i class="fa fa-check"></i>Reflection questions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="meta.html"><a href="meta.html"><i class="fa fa-check"></i><b>4</b> Meta-analysis in R</a>
+<ul>
+<li class="chapter" data-level="" data-path="meta.html"><a href="meta.html#learning-outcomes-3"><i class="fa fa-check"></i>Learning outcomes</a></li>
+<li class="chapter" data-level="" data-path="meta.html"><a href="meta.html#context-2"><i class="fa fa-check"></i>Context</a></li>
+<li class="chapter" data-level="" data-path="meta.html"><a href="meta.html#the-5-primary-steps-for-meta-analyses-in-r."><i class="fa fa-check"></i>The 5 primary steps for meta-analyses in R.</a></li>
+<li class="chapter" data-level="" data-path="meta.html"><a href="meta.html#challenge-2"><i class="fa fa-check"></i>Challenge</a></li>
+<li class="chapter" data-level="" data-path="meta.html"><a href="meta.html#products-2"><i class="fa fa-check"></i>Products</a></li>
+<li class="chapter" data-level="" data-path="meta.html"><a href="meta.html#resources-2"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="meta.html"><a href="meta.html#reflection-questions-2"><i class="fa fa-check"></i>Reflection questions</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="interpretation.html"><a href="interpretation.html"><i class="fa fa-check"></i><b>5</b> Quantitative synthesis workflow reporting</a>
+<ul>
+<li class="chapter" data-level="" data-path="interpretation.html"><a href="interpretation.html#learning-outcomes-4"><i class="fa fa-check"></i>Learning outcomes</a></li>
+<li class="chapter" data-level="" data-path="interpretation.html"><a href="interpretation.html#context-3"><i class="fa fa-check"></i>Context</a></li>
+<li class="chapter" data-level="" data-path="interpretation.html"><a href="interpretation.html#challenge-3"><i class="fa fa-check"></i>Challenge</a></li>
+<li class="chapter" data-level="" data-path="interpretation.html"><a href="interpretation.html#products-3"><i class="fa fa-check"></i>Products</a></li>
+<li class="chapter" data-level="" data-path="interpretation.html"><a href="interpretation.html#resources-3"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="interpretation.html"><a href="interpretation.html#reflection-questions-3"><i class="fa fa-check"></i>Reflection questions</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="reporting" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Quantitative synthesis workflow reporting</h1>
+<p><img src="report.png" style="width:3in" /></p>
+<div id="learning-outcomes-2" class="section level3 unnumbered">
+<h3>Learning outcomes</h3>
+<ol style="list-style-type: decimal">
+<li>Develop a checklist for reading systematic reviews and meta-analyses.<br />
+</li>
+<li>Document a quantitative synthesis process.<br />
+</li>
+<li>Consolidate understanding of key synthesis elements from the literature.</li>
+</ol>
+</div>
+<div id="context-1" class="section level3 unnumbered">
+<h3>Context</h3>
+<p>Evidence implementation and reuse is a non-trivial process in most disciplines. It is crucial that experts are able to use, reuse, and implement synthesis findings. This process of critical appraisal furthers a novel, big-picture view of scientific findings associated with single studies. This can take the form of a perspective that routinely weights relative evidence by purpose, reason, and other findings to improve decision making by stakeholders, the public, and other scientists. Application of this process to published peer-review evidence can be limited by transparency, level of reporting, missing data, meta-data articulation, and limited moderator reporting. Hence, ten simple rules for evidence reuse were proposed were broadly to highlight these and other challenges in synthesis science (<a href="https://www.facetsjournal.com/doi/10.1139/facets-2020-0021">Lortie and Owen 2020</a>). Critical reading of meta-analyses is also a powerful skill for all experts (<a href="https://onlinelibrary.wiley.com/doi/10.1002/jrsm.1109">Lortie et al. 2013</a>). This thinking and evaluation process has also been developed into a more prescriptive set of ten questions to apply to any published meta-analysis or systematic review (<a href="https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7">Nakagawa et al. 2017</a>). These questions strengthen the reuse of current meta-analyses and provide a checklist for reporting in future systematic reviews and meta-analyses.</p>
+<div id="checklist-reporting" class="section level4 unnumbered">
+<h4>Checklist reporting</h4>
+<p>List from (<a href="https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7">Nakagawa et al. 2017</a>):</p>
+<ol style="list-style-type: decimal">
+<li>Is the search systematic and transparently documented?</li>
+<li>What question and what effect size?<br />
+</li>
+<li>Is non-independence taken into account?<br />
+</li>
+<li>Which meta-analytic model?<br />
+</li>
+<li>Is the level of consistency among studies reported?<br />
+</li>
+<li>Are the causes of variation among studies investigated?<br />
+</li>
+<li>Are effects interpreted in terms of biological importance?<br />
+</li>
+<li>Has publication bias been considered?<br />
+</li>
+<li>Are results really robust and unbiased?<br />
+</li>
+<li>Is the current state (and lack) of knowledge summarized?</li>
+</ol>
+</div>
+<div id="purpose" class="section level4 unnumbered">
+<h4>Purpose</h4>
+<p>Good reporting is supported by good thinking. Purpose prevails. A primer for systematic reviews and meta-analysis in the sports science clearly articulates a clear and direct purpose delineation process for syntheses (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3474302/">Impellizzeri and Bizzini 2021</a>).</p>
+</div>
+<div id="goals-checklist" class="section level4 unnumbered">
+<h4>Goals checklist</h4>
+<p>List from (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3474302/">Impellizzeri and Bizzini 2021</a>):</p>
+<ol style="list-style-type: decimal">
+<li>Identifying treatments that are not effective.<br />
+</li>
+<li>Summarizing the likely magnitude of benefits of effective treatments.<br />
+</li>
+<li>Identifying unanticipated risks of apparently effective treatments.<br />
+</li>
+<li>Identifying gaps of knowledge.<br />
+</li>
+<li>Auditing the quality of existing trials.</li>
+</ol>
+<p>Collectively, these how-to papers suggest that it would be ideal if synthesis reporting exceeded the norms and standards associated with primary research reporting to enable next-level synthesis and reproducibility. Nonetheless, it is easy to get lost in the technical details. Consequently, purpose, audience, and reuse should be kept at the forefront of reviewing, reporting, and doing scientific syntheses. These ideas can be mobilized for knowledge mining even in the early steps of evidence retrieval and reviewing for inclusion in a synthesis project.</p>
+</div>
+</div>
+<div id="challenge-1" class="section level3 unnumbered">
+<h3>Challenge</h3>
+<ol style="list-style-type: decimal">
+<li>Apply the checklist to a systematic review and meta-analysis in your discipline published a number of years ago and again to a more recent synthesis study.<br />
+</li>
+<li>Check whether the derived data were also published for each synthesis paper.<br />
+</li>
+<li>Check main text of each and supplements and note whether a Preferred Reporting Items for Systematic Reviews and Meta-Analyses <a href="http://www.prisma-statement.org">(PRISMA)</a> checklist or flow diagram with provided.<br />
+</li>
+<li>Do a primary publication research query using Google Scholar and/or The Web Of Science for your specific process. Document the relative frequency of reporting by search terms (complete template provided below).<br />
+</li>
+<li>Review a small subset of the papers (screen only) and test out the <a href="https://cran.r-project.org/web/packages/PRISMAstatement/index.html">PRISMAstatement R package</a> for this scoping review.</li>
+</ol>
+</div>
+<div id="products-1" class="section level3 unnumbered">
+<h3>Products</h3>
+<ol style="list-style-type: decimal">
+<li>A checklist for review and reporting of these specific syntheses.<br />
+</li>
+<li>A pilot literature dataset of the literature for a search(es) for a synthesis. 3. A PRISMA statement flow chart for use in retrospective pilot reporting.</li>
+</ol>
+</div>
+<div id="resources-1" class="section level3 unnumbered">
+<h3>Resources</h3>
+<p><a href="https://figshare.com/articles/presentation/Quantitative_synthesis_reporting/16608700">Slide deck</a></p>
+<p><a href="https://figshare.com/articles/dataset/A_synthesis_review_literature_template/16608715">A synthesis review literature template</a></p>
+<p><a href="https://figshare.com/articles/dataset/PRISMA_statement_arguments_for_R_package/16608721">PRISMA statement arguments for R package</a></p>
+</div>
+<div id="reflection-questions-1" class="section level3 unnumbered">
+<h3>Reflection questions</h3>
+<ol style="list-style-type: decimal">
+<li>Was there evidence for a change in better synthesis reporting practices in your discipline?<br />
+</li>
+<li>Were the derived data reported in syntheses or would it be possible to update/repeat a published synthesis in your discipline?<br />
+</li>
+<li>Does the flow chart to reviewing and reusing research align with your cognitive modality and critical thinking approach to evidence?</li>
+</ol>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="tools.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="meta.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["quantitative_synthesis_tools.pdf", "quantitative_synthesis_tools.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
