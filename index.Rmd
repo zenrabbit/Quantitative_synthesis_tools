@@ -10,7 +10,7 @@ link-citations: yes
 description: "This a brief introduction to scientific synthesis tools that use meta-analyses and systematic reviews to advance science and inform decision making. "
 ---
 
-# Welcome    
+# Welcome to a short synthesis course    
 
 ![](./synthesis.png){width=3in}  
 
