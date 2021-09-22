@@ -3,7 +3,7 @@ title: ''
 author: "cjlortie"
 ---
 
-# Quantitative synthesis workflow reporting {#interpretation}
+# Interpretation and assessment {#interpretation}
 
 ![](./happy.png){width=3in}    
 

@@ -19,26 +19,24 @@ Try out these ideas in a meta-analysis. Securing derived data to replicate an ex
 
 ### The 5 primary steps for meta-analyses in R. {-}
 1. Secure primary data.  
-2. Build conceputal model for factors, reponses, and moderators.
+2. Build conceptual model for factors, reponses, and moderators.
 3. Calculate effect size(s).  
 4. Fit appropriate meta-model.  
 5. Explore significance levels, heterogeneity, and bias.
 
 
 ### Challenge {-}  
-1. Start simple and go with a classic. These [wind turbine data](https://figshare.com/articles/dataset/Meta_thinking_data_wind_turbine_effects_2005/7766990) and its meta-analysis changed the world.  Download these data and appled the 5 steps from above with help from the metafor documentation.  
-2. In the spirit of reuse and conceputal replication, this process was reported in 2017 with a more [comprehensive dataset](https://figshare.com/articles/dataset/Meta_thinking_data_wind_turbine_effects_2017/7767002).  
+1. Download a dataset and explore applying metafor to the data.
+2. Check the published report and examine whether you reached reasonably similar conclusions.  
+3. Repeat with a second example from another discipline and consider testing another metafor function.  
 
-Try out one of these datasets.  
 
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)
+datasets <- read_csv("./datasets.csv")
+knitr::kable(datasets, booktabs = TRUE)
 
-[Preventing exercise-induced bronchoconstriction meta-analysis](https://figshare.com/articles/dataset/Meta_thinking_data_preventing_exercise-induced_bronchoconstriction/7767020)  
-
-[A meta-analysis of restoration outcomes and species richness](https://knb.ecoinformatics.org/view/doi%3A10.5063%2F057DCQ)  
-
-[A synthesis of common garden studies testing for local adaptation to climate](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF1862DVX)  
-
-[A synthesis shrub facilitation studies testing for increases in community diversity estimates](https://knb.ecoinformatics.org/view/doi:10.5063/F147488H)  
+```
 
 ### Products {-}  
 1. Two R scripts for meta-analysis.  
