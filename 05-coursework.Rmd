@@ -1,0 +1,86 @@
+--- 
+title: ''
+author: "cjlortie"
+---
+
+# Coursework {#coursework}
+
+![](./course.jpg){width=3in}    
+
+
+### Summative assessment {-}  
+If you are completing this course of study for credit, here is the summative evaluation.  
+
+
+### Product 1: evidence maps {-}  
+Design an 'evidence map for evidence gaps' or 'evidence map as a geographic map' for a topic of your choice in your expertise or domain of research.  
+
+1. Select a topic and pilot appropriate search terms to populate a representative and reasonable set of peer-reviewed publications.  Use The Web of Science or other relevant bibliometric resource. Secure at least 50 papers for first review.   
+2. Review these primary studies for relevance, available data, concept of interest or hypothesis directly tested, and other criteria identified for your synthesis.  
+3. Generate a PRISMA workflow diagram and briefly describe exclusion criteria.  
+4. Using the included instances, compile frequency of study of key concepts of these primary studies.  
+5. Identify the country of study or more specific geographic estimate of study locations.  
+6. Record sample sizes of each independent trial from each study.  
+7. In processing the list of studies, keep track of potential key measures, outcomes, factors, and also moderators for future and deeper synthesis work on this topic.  
+8. If there is an existing systematic review on this topic or set of key terms and it was published at least 2-years ago, it is viable to update this synthesis work. Do the above steps and if a reasonable number of returns is present since date of synthesis publication (i.e. at least 50 recent primary papers), consider updating this work.  
+9. Generate your evidence map.  
+10. Briefly describe both the search process supporting the PRISMA workflow and the evidence map.  
+
+
+#### Rubric {-}
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)
+emap_rubric <- read_csv("./evidence_map_rubric.csv")
+knitr::kable(emap_rubric, booktabs = TRUE)
+
+```
+
+### Product 2: ignite commentary {-}  
+Based on your synthesis work completed in product 1, provide a short < 2000 word Ignite format contribution appropriate for the journal Oikos that inspired this [format of contribution](https://www.oikosjournal.org/authors/author-guidelines) to science.   
+
+1. Identify and describe the challenge or research question(s).   
+2. Succinctly summarize what is known.  
+3. Describe the evidence gaps and next steps for this specific field of research.  
+4. Highlight an implication of this synthesis process for readers.  
+5. Cite at least 5 papers relevant to the synthesis summarized as an Ignite paper here.  
+
+
+#### Rubric {-}
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)
+ignite <- read_csv("./ignite_rubric.csv")
+knitr::kable(ignite, booktabs = TRUE)
+
+```
+
+
+### Product 3: meta-analysis {-}  
+Complete a meta-analysis in R for a subset of your studies.   
+
+1. Reuse the studies included in your synthesis in products above.  
+2. Extract the mean, sample size, and estimate for variance associated with these measures.  
+3. Compile at least 12-15 independent observations for analysis.  These can be from a limited number of studies/papers provided the trials/experiments reported in a study or paper were independent. For instance, an experiment was replicated in 3 different grasslands in a paper and data were available for each. This is now commonly treated as independent replications if the ecology or science supports this. Evidence organized into papers is not necessarily single instances.  
+3. Identify at least one moderator (categorical or continuous) to explore in subsequent analyses.  
+4. Do a meta-analysis using metafor for simple grand mean effect of your key factor.  
+5. Explore heterogeneity and bias.  
+6. Repeat the meta-analysis and test your moderator.  
+7. The goal only 10-15 independent rows or observations here to pilot the statistical process and interpretation for your topic.  
+8. Generate a forest plot or meta-regression plot depending on your moderator.  
+9. Make a table of key results.  
+10. Aggregate the figure and table into a single document and provide a short 2-3 sentence interpretation.  
+
+
+
+#### Rubric {-}
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)
+meta_rubric <- read_csv("./meta_rubric.csv")
+knitr::kable(meta_rubric, booktabs = TRUE)
+
+```
+
+
+
