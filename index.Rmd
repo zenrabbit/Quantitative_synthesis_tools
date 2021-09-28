@@ -1,5 +1,5 @@
 --- 
-title: "Critical use and appraisal of meta-analyses and systematic reviews"
+title: "Critical skills for meta-analyses and systematic reviews"
 author: "cjlortie"
 date: ""
 site: bookdown::bookdown_site
@@ -10,7 +10,7 @@ link-citations: yes
 description: "This a brief introduction to scientific synthesis tools that use meta-analyses and systematic reviews to advance science and inform decision making. "
 ---
 
-# Critical use and appraisal of meta-analyses and systematic reviews      
+# Critical skills for meta-analyses and systematic reviews      
 
 ![](./synthesis.png){width=3in}  
 
