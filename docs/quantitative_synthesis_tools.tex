@@ -6,8 +6,8 @@
 ]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -33,13 +33,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdfauthor={cjlortie},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -68,11 +61,18 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdfauthor={cjlortie},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
 \author{cjlortie}
 \date{}
@@ -133,11 +133,23 @@ lesson & topic & goal & key resource\\
 \bottomrule
 \end{tabular}
 
+\hypertarget{citation}{%
+\subsection*{Citation}\label{citation}}
+\addcontentsline{toc}{subsection}{Citation}
+
+Lortie, CJ (2023): Critical skills for meta-analyses and systematic reviews. figshare. Book. 10.6084/m9.figshare.21817644.v2
+
 \hypertarget{license}{%
 \subsection*{License}\label{license}}
 \addcontentsline{toc}{subsection}{License}
 
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+\hypertarget{code}{%
+\subsection*{Code}\label{code}}
+\addcontentsline{toc}{subsection}{Code}
+
+\href{https://github.com/zenrabbit/Quantitative_synthesis_tools}{\includegraphics{./GitHub.png}}
 
 \hypertarget{tools}{%
 \chapter{Quantitative synthesis tools}\label{tools}}

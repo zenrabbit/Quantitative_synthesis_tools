@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Meta-analysis in R | quantitative_synthesis_tools.knit</title>
   <meta name="description" content="This a brief introduction to scientific synthesis tools that use meta-analyses and systematic reviews to advance science and inform decision making." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Meta-analysis in R | quantitative_synthesis_tools.knit" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This a brief introduction to scientific synthesis tools that use meta-analyses and systematic reviews to advance science and inform decision making." />
   
@@ -32,7 +31,6 @@
   
 <link rel="prev" href="reporting.html"/>
 <link rel="next" href="interpretation.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -99,7 +98,9 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#learning-outcomes"><i class="fa fa-check"></i>Learning outcomes</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#rationale"><i class="fa fa-check"></i>Rationale</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#structure"><i class="fa fa-check"></i>Structure</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#citation"><i class="fa fa-check"></i>Citation</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#code"><i class="fa fa-check"></i>Code</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>2</b> Quantitative synthesis tools</a>
 <ul>
@@ -166,11 +167,11 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="meta" class="section level1" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Meta-analysis in R</h1>
+<div id="meta" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Meta-analysis in R<a href="meta.html#meta" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p><img src="meta.png" style="width:3in" /></p>
-<div id="learning-outcomes-3" class="section level3 unnumbered">
-<h3>Learning outcomes</h3>
+<div id="learning-outcomes-3" class="section level3 unnumbered hasAnchor">
+<h3>Learning outcomes<a href="meta.html#learning-outcomes-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li>Format data for meta-analyses in R.<br />
 </li>
@@ -179,12 +180,12 @@ div.csl-indent {
 <li>Pilot statistics for two datasets.</li>
 </ol>
 </div>
-<div id="context-2" class="section level3 unnumbered">
-<h3>Context</h3>
+<div id="context-2" class="section level3 unnumbered hasAnchor">
+<h3>Context<a href="meta.html#context-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Try out these ideas in a meta-analysis. Securing derived data to replicate an existing synthesis was not common historically, but it is now becoming increasingly viable with open science influences on these contributions. How to <a href="https://bpspsychub.onlinelibrary.wiley.com/doi/epdf/10.1348/000711010X502733">do a meta-analysis</a> is well described in the peer-reviewed literature <span class="citation">(<a href="bibliography.html#ref-RN4836" role="doc-biblioref">Field and Gillett 2010</a>)</span> and numerous books to name a few <span class="citation">(<a href="bibliography.html#ref-RN2185" role="doc-biblioref">Koricheva, Gurevitch, and Mengersen 2013</a>)</span>. Doing meta-analyses using the R programming language is similarly well articulated - particularly from the <a href="https://www.metafor-project.org/doku.php">documentation</a> associated with the package metafor <span class="citation">(<a href="bibliography.html#ref-RN6175" role="doc-biblioref">Viechtbauer 2017</a>)</span>. There are no bad choices in R with well over 100 packages associated with and supporting meta-analyses <a href="https://cran.r-project.org/web/views/MetaAnalysis.html">conservatively listed at 151 packages</a>. The output of Stata (an application specific to many medical meta-analyses), the R package meta, and metafor were virtually identical in several <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.6747">test cases</a> <span class="citation">(<a href="bibliography.html#ref-RN6974" role="doc-biblioref">C. J. Lortie and Filazzola 2020</a>)</span>. Ten criteria are proposed in contrasting R packages for this task specifically, but at the current time, metafor is the most commonly used and extensively documented. Hence, consider tackling the challenges here with this package as a robust starting point and entry in meta-statistics.</p>
 </div>
-<div id="the-5-primary-steps-for-meta-analyses-in-r." class="section level3 unnumbered">
-<h3>The 5 primary steps for meta-analyses in R.</h3>
+<div id="the-5-primary-steps-for-meta-analyses-in-r." class="section level3 unnumbered hasAnchor">
+<h3>The 5 primary steps for meta-analyses in R.<a href="meta.html#the-5-primary-steps-for-meta-analyses-in-r." class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li>Secure primary data.<br />
 </li>
@@ -196,8 +197,8 @@ div.csl-indent {
 <li>Explore significance levels, heterogeneity, and bias.</li>
 </ol>
 </div>
-<div id="challenge-2" class="section level3 unnumbered">
-<h3>Challenge</h3>
+<div id="challenge-2" class="section level3 unnumbered hasAnchor">
+<h3>Challenge<a href="meta.html#challenge-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li>Download a dataset and explore applying metafor to the data.</li>
 <li>Check the published report and examine whether you reached reasonably similar conclusions.<br />
@@ -206,9 +207,9 @@ div.csl-indent {
 </ol>
 <table>
 <colgroup>
-<col width="5%" />
-<col width="44%" />
-<col width="50%" />
+<col width="9%" />
+<col width="37%" />
+<col width="53%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -246,21 +247,21 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
-<div id="products-2" class="section level3 unnumbered">
-<h3>Products</h3>
+<div id="products-2" class="section level3 unnumbered hasAnchor">
+<h3>Products<a href="meta.html#products-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li>Two R scripts for meta-analysis.<br />
 </li>
 <li>A sense of data structures needed for meta-analyses in the R package metafor.</li>
 </ol>
 </div>
-<div id="resources-2" class="section level3 unnumbered">
-<h3>Resources</h3>
+<div id="resources-2" class="section level3 unnumbered hasAnchor">
+<h3>Resources<a href="meta.html#resources-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://www.metafor-project.org/doku.php">metafor documentation</a><br />
 <a href="https://bookdown.org/home/tags/meta-analysis/">Bookdown free books</a></p>
 </div>
-<div id="reflection-questions-2" class="section level3 unnumbered">
-<h3>Reflection questions</h3>
+<div id="reflection-questions-2" class="section level3 unnumbered hasAnchor">
+<h3>Reflection questions<a href="meta.html#reflection-questions-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li>Did the analytical process differ significantly from primary-data workflows?<br />
 </li>
